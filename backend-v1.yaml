@@ -9,7 +9,7 @@ spec:
   ports:
   - port: 8080
     protocol: TCP
-    targetPort: 8080
+    targetPort: 8081
   selector:
     app: bakend
     version: v1
@@ -40,7 +40,7 @@ spec:
         image: nicholasjackson/fake-service:v0.26.2
         ports:
           - name: http
-            containerPort: 8081
+            containerPort: 8080
             protocol: TCP
         livenessProbe:
           tcpSocket:
