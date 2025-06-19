@@ -11,7 +11,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: backend
+    app: bakend
     version: v1
   type: ClusterIP
 ---
@@ -40,7 +40,7 @@ spec:
         image: nicholasjackson/fake-service:v0.26.2
         ports:
           - name: http
-            containerPort: 8080
+            containerPort: 8081
             protocol: TCP
         livenessProbe:
           tcpSocket:
