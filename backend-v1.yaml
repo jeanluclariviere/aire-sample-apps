@@ -11,7 +11,7 @@ spec:
     protocol: TCP
     targetPort: 8081
   selector:
-    app: bakend
+    app: backend
     version: v1
   type: ClusterIP
 ---
