@@ -4,12 +4,12 @@ metadata:
   name: backend-v1
   namespace: default
   labels:
-    app: bakend
+    app: backend
 spec:
   ports:
   - port: 8080
     protocol: TCP
-    targetPort: 8081
+    targetPort: 8080
   selector:
     app: backend
     version: v1
