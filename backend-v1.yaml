@@ -9,9 +9,9 @@ spec:
   ports:
   - port: 8080
     protocol: TCP
-    targetPort: 8080
+    targetPort: 8081
   selector:
-    app: backend
+    app: bacend
     version: v1
   type: ClusterIP
 ---
